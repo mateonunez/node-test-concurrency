@@ -1,0 +1,19 @@
+{
+  "name": "concurrency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:fail": "node --test",
+    "test:pass": "node runner.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "glob": "^10.3.10"
+  }
+}
