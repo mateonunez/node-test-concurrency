@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
+      - run: npm run up
       - run: npm run test:pass
 
   test-fail:
@@ -39,6 +40,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
+      - run: npm run up
       - run: npm run test:fail
         continue-on-error: true
 
@@ -53,4 +55,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
+      - run: npm run up
       - run: npm run test:pass:flag

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "up": "docker-compose up -d",
     "test:fail": "node --test",
     "test:pass": "node runner.js",
     "test:pass:flag": "node --test --test-concurrency=1"
