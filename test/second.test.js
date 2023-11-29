@@ -1,6 +1,6 @@
 const { clearData, createAndSelectData, end } = require('../index.js');
 const { test } = require('node:test')
-const assert = require('node:assert');
+const assert = require('node:assert/strict');
 
 test('should create and select data', async () => {
   test.after(() => {
